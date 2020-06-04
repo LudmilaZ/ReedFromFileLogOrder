@@ -15,9 +15,7 @@ Path path = Paths.get(args[0]);
         HashMap<String, Integer> map = new HashMap<String, Integer>();
 try{
 
-  
-
-        FileReader fileReader = new FileReader(path.toFile());
+          FileReader fileReader = new FileReader(path.toFile());
         BufferedReader reader = new BufferedReader(fileReader);
 
 
