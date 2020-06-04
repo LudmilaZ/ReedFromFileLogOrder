@@ -9,15 +9,15 @@ import java.util.SortedSet;
 import java.util.TreeSet;
 
 public class Start {
-    private static final String FILE_NAME = "C:\\log.txt";
+
     public static void main(String[] args) throws Exception{
 Path path = Paths.get(args[0]);
         HashMap<String, Integer> map = new HashMap<String, Integer>();
 try{
 
-    File myFile = new File(path.toString());
+  
 
-        FileReader fileReader = new FileReader(myFile);
+        FileReader fileReader = new FileReader(path.toFile());
         BufferedReader reader = new BufferedReader(fileReader);
 
 
